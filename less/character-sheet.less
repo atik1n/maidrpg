@@ -1,0 +1,152 @@
+.maidrpg.sheet.charactersheet {
+  .window-content {
+    background: #fff;
+  }
+  .description {
+    width: 100%;
+  .expertise {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    grid-column: span 2;
+    background: url("../images/flower_background.png");
+    background-size: 100% 100%;
+
+    ol {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .item {
+      width: 100%;
+    }
+
+    .maid_type {
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    input {
+      width: 35%;
+      float: left;
+      background-color: #fff;
+    }
+
+    .maid_special::-webkit-scrollbar {
+      display: none;
+    }
+    .maid_special {
+      border: 1px dotted black;
+      background: #fff;
+      border-radius: 8px;
+      width: 100%;
+      text-align: center;
+      height: 330px;
+      padding-top: 5px;
+      overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .maid_etc {
+      width: 100%;
+      text-align: center;
+      .maid_power::-webkit-scrollbar {
+        display: none;
+      }
+      .maid_roots::-webkit-scrollbar {
+        display: none;
+      }
+      .maid_stress::-webkit-scrollbar {
+        display: none;
+      }
+      .maid_roots {
+        background: #fff;
+        padding-top: 5px;
+        border: 1px dotted black;
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        margin-bottom: 15px;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .maid_stress {
+        background: #fff;
+        padding-top: 5px;
+        border: 1px dotted black;
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        margin-bottom: 15px;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .maid_power {
+        background: #fff;
+        padding-top: 5px;
+        border: 1px dotted black;
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        overflow: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    }
+  }
+
+  .sidebar {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 20px solid transparent;
+    border-image: url("../images/border.png") 50 round;
+  }
+  .name_label {
+    gap: 0px;
+    margin: 0px;
+  }
+  .age_label {
+    gap: 0px;
+    margin: 0px;
+    text-align: right;
+    padding-right: 2px;
+  }
+  .name_input {
+    gap: 0px;
+    margin: 0px;
+    grid-column: span 2;
+  }
+  .age_input {
+    width: 30px;
+    gap: 0px;
+    margin: 0px;
+  }
+
+
+  h1 {
+    text-align: center;
+
+  }
+
+  .actor-img {
+    width: 256px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  select {
+    border: none;
+    text-align: center;
+  }
+}
+}

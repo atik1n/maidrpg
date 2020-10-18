@@ -1,0 +1,403 @@
+.rollable:hover,
+.rollable:focus {
+  color: #000;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+.grid,
+.grid-2col {
+  display: grid;
+  grid-column: span 2 / span 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 5px 0;
+  padding: 0;
+}
+.grid-3col {
+  grid-column: span 3 / span 3;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-4col {
+  grid-column: span 4 / span 4;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-5col {
+  grid-column: span 5 / span 5;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-6col {
+  grid-column: span 6 / span 6;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-7col {
+  grid-column: span 7 / span 7;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.grid-8col {
+  grid-column: span 8 / span 8;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+.grid-9col {
+  grid-column: span 9 / span 9;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+.grid-10col {
+  grid-column: span 10 / span 10;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+.grid-11col {
+  grid-column: span 11 / span 11;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+.grid-12col {
+  grid-column: span 12 / span 12;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.flex-group-center,
+.flex-group-left,
+.flex-group-right {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
+  /*border: 1px solid #999;*/
+}
+.flex-group-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.flex-group-right {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right;
+}
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+.flex-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.sheet-tabs {
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+.sheet-body,
+.sheet-body .tab,
+.sheet-body .tab .editor {
+  height: 100%;
+}
+.tabs {
+  height: 40px;
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+.tabs .item {
+  line-height: 40px;
+  font-weight: bold;
+}
+.tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+.maidrpg.sheet.item .window-content {
+  background: #fff;
+}
+.maidrpg.sheet.item form {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/flower_background.png");
+  background-size: 100%;
+}
+.maidrpg.sheet.item input {
+  background-color: #fff;
+}
+.maidrpg.sheet.item .item_description {
+  margin-top: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.maidrpg.sheet.item .item_description .editor {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 100%;
+  padding: 5px;
+  background-color: #fff;
+}
+.maidrpg.sheet.item .item_description p.item_description_header {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.maidrpg.sheet.charactersheet .stat-block {
+  align-items: center;
+}
+.maidrpg.sheet.charactersheet .stat-block label {
+  width: 10%;
+}
+.maidrpg.sheet.charactersheet .stat-block input {
+  border: none;
+  margin-bottom: 0.25em;
+  width: 100px;
+}
+.maidrpg.sheet.charactersheet .attribute-block {
+  background-color: #9E9E9E;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.maidrpg.sheet.charactersheet .attribute-block input {
+  background-color: #fff;
+}
+.maidrpg.sheet.charactersheet .vitals-block {
+  height: 100%;
+}
+.maidrpg.sheet.charactersheet .vitals-block .stress_label {
+  grid-column: span 2;
+  text-align: left;
+  gap: 0px;
+  margin: 0px 0;
+  padding: 0;
+}
+.maidrpg.sheet.charactersheet .vitals-block .favor_label {
+  grid-column: span 2;
+  text-align: left;
+  gap: 0px;
+  margin: 0px 0;
+  padding: 0;
+}
+.maidrpg.sheet.charactersheet .vitals-block .stress-block::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .favor-block::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .weapons-block::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .appearance-block::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .notes-block::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .stress-block {
+  height: 200px;
+  border: 1px dotted black;
+  border-radius: 8px;
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .stress-block .editor {
+  height: 100%;
+}
+.maidrpg.sheet.charactersheet .vitals-block .favor-block {
+  height: 200px;
+  border: 1px dotted black;
+  border-radius: 8px;
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .favor-block .editor {
+  height: 100%;
+}
+.maidrpg.sheet.charactersheet .vitals-block .weapons-block {
+  height: 100px;
+  overflow: scroll;
+  padding: 5px;
+  border: 1px dotted black;
+  border-radius: 8px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 0px;
+}
+.maidrpg.sheet.charactersheet .vitals-block .appearance-block {
+  margin-top: 2px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted black;
+  border-radius: 8px;
+  padding: 5px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .appearance-block .editor {
+  height: 100%;
+}
+.maidrpg.sheet.charactersheet .vitals-block .notes-block {
+  margin: 2px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted black;
+  border-radius: 8px;
+  padding: 5px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .vitals-block .notes-block .editor {
+  height: 100%;
+}
+.maidrpg.sheet.charactersheet .window-content {
+  background: #fff;
+}
+.maidrpg.sheet.charactersheet .description {
+  width: 100%;
+}
+.maidrpg.sheet.charactersheet .description .expertise {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  grid-column: span 2;
+  background: url("../images/flower_background.png");
+  background-size: 100% 100%;
+}
+.maidrpg.sheet.charactersheet .description .expertise ol {
+  padding: 0px;
+  margin: 0px;
+}
+.maidrpg.sheet.charactersheet .description .expertise .item {
+  width: 100%;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_type {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.maidrpg.sheet.charactersheet .description .expertise input {
+  width: 35%;
+  float: left;
+  background-color: #fff;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_special::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_special {
+  border: 1px dotted black;
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  height: 330px;
+  padding-top: 5px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_etc {
+  width: 100%;
+  text-align: center;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_etc .maid_power::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_etc .maid_roots::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_etc .maid_stress::-webkit-scrollbar {
+  display: none;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_etc .maid_roots {
+  background: #fff;
+  padding-top: 5px;
+  border: 1px dotted black;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  margin-bottom: 15px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_etc .maid_stress {
+  background: #fff;
+  padding-top: 5px;
+  border: 1px dotted black;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  margin-bottom: 15px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .description .expertise .maid_etc .maid_power {
+  background: #fff;
+  padding-top: 5px;
+  border: 1px dotted black;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.maidrpg.sheet.charactersheet .description .sidebar {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 20px solid transparent;
+  border-image: url("../images/border.png") 50 round;
+}
+.maidrpg.sheet.charactersheet .description .name_label {
+  gap: 0px;
+  margin: 0px;
+}
+.maidrpg.sheet.charactersheet .description .age_label {
+  gap: 0px;
+  margin: 0px;
+  text-align: right;
+  padding-right: 2px;
+}
+.maidrpg.sheet.charactersheet .description .name_input {
+  gap: 0px;
+  margin: 0px;
+  grid-column: span 2;
+}
+.maidrpg.sheet.charactersheet .description .age_input {
+  width: 30px;
+  gap: 0px;
+  margin: 0px;
+}
+.maidrpg.sheet.charactersheet .description h1 {
+  text-align: center;
+}
+.maidrpg.sheet.charactersheet .description .actor-img {
+  width: 256px;
+}
+.maidrpg.sheet.charactersheet .description input {
+  width: 100%;
+}
+.maidrpg.sheet.charactersheet .description select {
+  border: none;
+  text-align: center;
+}

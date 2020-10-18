@@ -1,0 +1,12 @@
+{
+  "maidrpg": {
+    "items": {
+      "power": "Maid Power",
+      "roots": "Maid Roots",
+      "special": "Special Qualities",
+      "stress": "Stress Explosion",
+      "maid_type": "Maid Type",
+      "weapon": "Weapon"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.maidrpg.sheet.charactersheet {
+  .stat-block {
+    align-items: center;
+
+    label {
+    width: 10%;
+    }
+
+    input {
+      border: none;
+      margin-bottom: 0.25em;
+      width: 100px;
+    }
+  }
+  .attribute-block {
+    background-color: #9E9E9E;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    input {
+      background-color: #fff;
+    }
+  }
+  .vitals-block {
+    height: 100%;
+        .stress_label {
+          grid-column: span 2;
+          text-align: left;
+          gap: 0px;
+          margin: 0px 0;
+          padding: 0;
+        }
+        .favor_label {
+          grid-column: span 2;
+          text-align: left;
+          gap: 0px;
+          margin: 0px 0;
+          padding: 0;
+        }
+
+        .stress-block::-webkit-scrollbar {
+          display: none;
+        }
+        .favor-block::-webkit-scrollbar {
+          display: none;
+        }
+        .weapons-block::-webkit-scrollbar {
+          display: none;
+        }
+        .appearance-block::-webkit-scrollbar {
+          display: none;
+        }
+        .notes-block::-webkit-scrollbar {
+          display: none;
+        }
+        .stress-block {
+          height: 200px;
+          border: 1px dotted black;
+          border-radius: 8px;
+          margin: 2px;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          .editor {
+            height: 100%;
+          }
+
+        }
+        .favor-block {
+          height: 200px;
+          border: 1px dotted black;
+          border-radius: 8px;
+          margin: 2px;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          .editor {
+            height: 100%;
+          }
+        }
+        .weapons-block {
+          height: 100px;
+          overflow: scroll;
+          padding: 5px;
+          border: 1px dotted black;
+          border-radius: 8px;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          margin-bottom: 0px;
+        }
+        .appearance-block {
+          margin-top: 2px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          border: 1px dotted black;
+          border-radius: 8px;
+          padding: 5px;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          .editor {
+            height: 100%;
+          }
+        }
+        .notes-block {
+          margin: 2px;
+          height: 210px;
+          display: flex;
+          flex-direction: column;
+          border: 1px dotted black;
+          border-radius: 8px;
+          padding: 5px;
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+          .editor {
+            height: 100%;
+          }
+        }
+      }
+    }

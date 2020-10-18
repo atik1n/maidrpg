@@ -1,0 +1,199 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <div class="description grid grid-3col">
+    <div class="expertise">
+      {{#if (eq actor.type "maid")}}
+      <div class="maid_type">
+        <label class="maid_type">Maid Types: </label>
+        <input name="data.maid_type1" type="text" value="{{data.maid_type1}}" />
+        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        <input name="data.maid_type2" type="text" value="{{data.maid_type2}}" />
+      </div>
+      {{/if}}
+      {{#if (eq actor.type "butler")}}
+      <div class="maid_type">
+        <label class="maid_type">Butler Types: </label>
+        <input name="data.butler_type1" type="text" value="{{data.butler_type1}}" />
+        <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+        <input name="data.butler_type2" type="text" value="{{data.butler_type2}}" />
+      </div>
+      {{/if}}
+      {{#if (eq actor.type "master")}}
+      <label class="maid_type">Master Type: </label>
+      <input name="master.master_type" type="text" value="{{data.master_type}}" />
+      {{/if}}
+      <div class="grid grid-2col">
+        <div class="maid_special">
+          <label>Special Qualities</label>
+          <ol>
+          {{#each actor.special as |item id|}}
+              <li class="item flexrow" data-item-id="{{item._id}}">
+                  <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                  <h4 class="item-name rollable">{{item.name}}</h4>
+                  <div class="item-controls">
+                      <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                      <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                  </div>
+              </li>
+              {{/each}}
+          </ol>
+        </div>
+        {{#if (eq actor.type "maid")}}
+        <div class="maid_etc">
+          <div class="maid_roots">
+            <label>Maid Roots</label>
+            <ol>
+            {{#each actor.roots as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+          </div>
+          <div class="maid_stress">
+            <label>Stress Explosion</label>
+            <ol>
+            {{#each actor.stress as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+          </div>
+          <div class="maid_power">
+            <label>Maid Powers</label>
+            <ol>
+            {{#each actor.power as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+          </div>
+        </div>
+        {{/if}}
+        {{#if (eq actor.type "butler")}}
+        <div class="maid_etc">
+          <div class="maid_roots">
+            <label>Butler Roots</label>
+            <ol>
+            {{#each actor.roots as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+          </div>
+          <div class="maid_power">
+            <label>Butler Powers</label>
+            <ol>
+            {{#each actor.power as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+          </div>
+        </div>
+        {{/if}}
+        {{#if (eq actor.type "master")}}
+        <div class="maid_etc">
+          <div class="maid_stress">
+            <label>Stress Explosion</label>
+            <ol>
+            {{#each actor.stress as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+          </div>
+          <div class="maid_power">
+            <label>Power Sources</label>
+            <ol>
+            {{#each actor.power as |item id|}}
+                <li class="item flexrow" data-item-id="{{item._id}}">
+                    <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
+                    <h4 class="item-name">{{item.name}}</h4>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+          </div>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="grid grid-5col flexrow flex-group-center nameage" style="gap: 0px;">
+          <label class="name_label">Name</label>
+          <input class="name_input" name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+          <label class="age_label">Age</label>
+          <input class="age_input" name="data.age" type="text" value="{{data.age}}" placeholder="Age" data-dtype="Number"/>
+      </div>
+      <img class="actor-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>
+      <div class="flex-group-center">
+        {{#if (eq actor.type "maid")}}
+        <label>Maid Colors</label>
+        {{/if}}
+        {{#if (eq actor.type "butler")}}
+        <label>Butler Colors</label>
+        {{/if}}
+        {{#if (eq actor.type "master")}}
+        <label>Master Colors</label>
+        {{/if}}
+        <div class="grid grid-3col flexrow flex-group-center">
+          <label>Clothes</label>
+          <label>Eyes</label>
+          <label>Hair</label>
+        </div>
+        <div class="grid grid-3col flexrow flex-center">
+          <h4 class="charage"><input name="data.clothes" type="text" value="{{data.clothes}}" placeholder="Clothes" data-dtype="String"/></h1>
+          <h4 class="charage"><input name="data.eyes" type="text" value="{{data.eyes}}" placeholder="Eyes" data-dtype="String"/></h1>
+          <h4 class="charage"><input name="data.hair" type="text" value="{{data.hair}}" placeholder="Hair" data-dtype="String"/></h1>
+        </div>
+      </div>
+    </div>
+</div>
+    <div class="stats-and-weapons">
+      {{> "systems/maidrpg/templates/partials/character-stat-block.hbs"}}
+      <section class="weapon-list">
+        {{#each weapons as |weapon id|}}
+        {{> "systems/maidrpg/templates/paritals/weapon-card.hbs" weapon}}
+        {{/each}}
+    <div>
+    </div>
+  </div>
+</form>

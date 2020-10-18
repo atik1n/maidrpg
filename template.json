@@ -1,0 +1,108 @@
+{
+  "Actor": {
+    "types": ["maid", "butler", "master"],
+    "templates": {
+      "base": {
+        "appearance": "",
+        "notes": "",
+        "favor_desc": "",
+        "stress_desc": "",
+        "attributes": {
+          "athletics": {
+            "label": "Athletics",
+            "value": 0
+          },
+          "affection": {
+            "label": "Affection",
+            "value": 0
+          },
+          "skill": {
+            "label": "Skill",
+            "value": 0
+          },
+          "cunning": {
+            "label": "Cunning",
+            "value": 0
+          },
+          "luck": {
+            "label": "Luck",
+            "value": 0
+          },
+          "will": {
+            "label": "Will",
+            "value": 0
+          }
+        },
+        "vitals": {
+          "favor": {
+            "value": 0
+          },
+          "spirit": {
+            "value": 0
+          },
+          "stress": {
+            "value": 0
+          }
+        },
+        "colors": {
+          "clothes": "",
+          "eyes": "",
+          "hair": ""
+        }
+      }
+    },
+    "maid": {
+      "templates": ["base"],
+      "maid_type1": "",
+      "maid_type2": ""
+    },
+    "master": {
+      "templates": ["base"],
+      "master_type": "",
+      "fav_maid_type": "",
+      "attributes": {
+        "will": {
+          "value": 2
+        }
+      }
+    },
+    "butler": {
+      "templates": ["base"],
+      "butler_type1": "",
+      "butler_type2": ""
+    }
+  },
+  "Item": {
+    "types": [
+      "power",
+      "roots",
+      "special",
+      "stress",
+      "character_type",
+      "weapon"
+    ],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "power": {
+      "templates": ["base"]
+    },
+    "roots": {
+      "templates": ["base"]
+    },
+    "special": {
+      "templates": ["base"]
+    },
+    "stress": {
+      "templates": ["base"]
+    },
+    "character_type": {
+      "templates": ["base"]
+    },
+    "weapon": {
+      "templates": ["base"]
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "description": "Maid: The Role-Playing Game is a comedic take on a uniquely Japanese cultural icon: The fetishized modern maid. Injecting the concept of Maid with 50ccs of anime and comedy, the players take on the roles of maids, serving the master (played by the GM). Sheets are left unfolded and mantelpieces undusted when giant robots crash through the mansion, ninjas attack and kidnap the young master, and a demonic pit to Hell opens up in the pantry... and all before teatime!",
   "version": "0.0.1",
   "minimumCoreVersion": "0.6.6",
-  "compatibleCoreVersion": "0.7.3",
+  "compatibleCoreVersion": "0.7.5",
   "templateVersion": 2,
   "author": "Vorkane",
   "esmodules": ["module/maidrpg.js"],

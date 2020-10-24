@@ -98,8 +98,8 @@
   ],
   "gridDistance": 5,
   "gridUnits": "ft",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/Vorkane/maidrpg",
+  "manifest": "https://raw.githubusercontent.com/Vorkane/maidrpg/master/system.json?token=AAOSVAPOZ5Z4G26T2CBMF4S7SRLD4",
+  "download": "https://github.com/Vorkane/maidrpg/archive/v.0.0.1.zip",
   "license": "LICENSE.txt"
 }

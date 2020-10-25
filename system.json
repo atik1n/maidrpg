@@ -2,7 +2,7 @@
   "name": "maidrpg",
   "title": "Maid RPG",
   "description": "Maid: The Role-Playing Game is a comedic take on a uniquely Japanese cultural icon: The fetishized modern maid. Injecting the concept of Maid with 50ccs of anime and comedy, the players take on the roles of maids, serving the master (played by the GM). Sheets are left unfolded and mantelpieces undusted when giant robots crash through the mansion, ninjas attack and kidnap the young master, and a demonic pit to Hell opens up in the pantry... and all before teatime!",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "minimumCoreVersion": "0.6.6",
   "compatibleCoreVersion": "0.7.5",
   "templateVersion": 2,
@@ -100,6 +100,6 @@
   "gridUnits": "ft",
   "url": "https://github.com/Vorkane/maidrpg",
   "manifest": "https://raw.githubusercontent.com/Vorkane/maidrpg/master/system.json",
-  "download": "https://github.com/Vorkane/maidrpg/archive/v.0.0.3.zip",
+  "download": "https://github.com/Vorkane/maidrpg/archive/v.0.0.4.zip",
   "license": "LICENSE.txt"
 }

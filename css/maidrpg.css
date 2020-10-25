@@ -278,6 +278,7 @@
 }
 .maidrpg.sheet.charactersheet .description .expertise ol {
   padding: 0px;
+  margin-top: 2px;
   margin: 0px;
 }
 .maidrpg.sheet.charactersheet .description .expertise .item {

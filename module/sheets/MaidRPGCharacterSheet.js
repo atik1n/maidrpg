@@ -18,18 +18,6 @@ export default class MaidRPGCharacterSheet extends ActorSheet{
     for (let attr of Object.values(data.data.attributes)) {
      attr.isCheckbox = attr.dtype === "Boolean";
    }
-
-    // Prepare items.
-    if (this.actor.data.type == 'maid') {
-      this._prepareCharacterItems(data);
-    }
-    else if (this.actor.data.type == 'butler') {
-      this._prepareCharacterItems(data);
-    }
-    else if (this.actor.data.type == 'master') {
-      this._prepareCharacterItems(data);
-    }
-
     return data;
   }
 

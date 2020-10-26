@@ -1,6 +1,7 @@
 import {maidrpg} from "./config.js";
 import MaidRPGItemSheet from "./sheets/MaidRPGItemSheet.js";
 import MaidRPGCharacterSheet from "./sheets/MaidRPGCharacterSheet.js";
+import {MaidRPGActor} from "./sheets/MaidRPGActor.js";
 
 async function preloadHandlebarsTemplates() {
   const templatePaths = [

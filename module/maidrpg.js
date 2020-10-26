@@ -14,7 +14,13 @@ async function preloadHandlebarsTemplates() {
 Hooks.once("init", function() {
   console.log("maidrpg | Intializing Maid RPG System");
 
+  game.maidrpg = {
+    MaidRPGActor
+  }
+
   CONFIG.maidrpg = maidrpg;
+
+  CONFIG.Actor.entityClass = MaidRPGActor;
 
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("maidrpg", MaidRPGItemSheet, { makeDefault: true});

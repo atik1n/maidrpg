@@ -134,7 +134,7 @@
                         <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                     </div>
                 </li>
-                {{/each}}
+            {{/each}}
             </ol>
           </div>
           <div class="maid_power">
@@ -189,10 +189,6 @@
 </div>
     <div class="stats-and-weapons">
       {{> "systems/maidrpg/templates/partials/character-stat-block.hbs"}}
-      <section class="weapon-list">
-        {{#each weapons as |weapon id|}}
-        {{> "systems/maidrpg/templates/paritals/weapon-card.hbs" weapon}}
-        {{/each}}
     <div>
     </div>
   </div>

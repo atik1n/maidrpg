@@ -23,6 +23,12 @@ export default class MaidRPGCharacterSheet extends ActorSheet{
     if (this.actor.data.type == 'maid') {
       this._prepareCharacterItems(data);
     }
+    if (this.actor.data.type == 'butler') {
+      this._prepareCharacterItems(data);
+    }
+    if (this.actor.data.type == 'master') {
+      this._prepareCharacterItems(data);
+    }
 
     return data;
   }

@@ -1,4 +1,4 @@
-extend class MaidRPGActor extends Actor {
+export class MaidRPGActor extends Actor {
   /**
     * Augment the basic actor data with additional dynamic data.
     */
@@ -12,16 +12,16 @@ extend class MaidRPGActor extends Actor {
      // Make separate methods for each Actor type (character, npc, etc.) to keep
      // things organized.
      // Prepare items.
-     if (this.actor.data.type == 'maid') {
-       this._prepareCharacterItems(actorData);
+     if (actorData.type == 'maid') {
+       this._prepareCharacterData(actorData);
      }
-     else if (this.actor.data.type == 'butler') {
-       this._prepareCharacterItems(actorData);
+     else if (actorData.type == 'butler') {
+       this._prepareCharacterData(actorData);
      }
-     else if (this.actor.data.type == 'master') {
-       this._prepareCharacterItems(actorData);
+     else if (actorData.type == 'master') {
+       this._prepareCharacterData(actorData);
      }
-
+}
    /**
     * Prepare Character type specific data
     */

@@ -18,8 +18,10 @@
       </div>
       {{/if}}
       {{#if (eq actor.type "master")}}
-      <label class="maid_type">Master Type: </label>
-      <input name="data.master_type" type="text" value="{{data.master_type}}" />
+      <div class="maid_type">
+        <label class="maid_type">Master Type: </label>
+        <input name="data.master_type" type="text" value="{{data.master_type}}" />
+      </div>
       {{/if}}
       <div class="grid grid-2col">
         <div class="maid_special">
@@ -34,7 +36,7 @@
                       <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
                   </div>
               </li>
-              {{/each}}
+          {{/each}}
           </ol>
         </div>
         {{#if (eq actor.type "maid")}}

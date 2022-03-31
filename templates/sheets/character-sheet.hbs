@@ -4,23 +4,23 @@
       {{#if (eq actor.type "maid")}}
       <div class="maid_type">
         <label class="maid_type">Maid Types: </label>
-        <input name="data.maid_type1" type="text" value="{{data.maid_type1}}" />
+        <input name="data.maid_type1" type="text" value="{{data.data.maid_type1}}" />
         <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-        <input name="data.maid_type2" type="text" value="{{data.maid_type2}}" />
+        <input name="data.maid_type2" type="text" value="{{data.data.maid_type2}}" />
       </div>
       {{/if}}
       {{#if (eq actor.type "butler")}}
       <div class="maid_type">
         <label class="maid_type">Butler Types: </label>
-        <input name="data.butler_type1" type="text" value="{{data.butler_type1}}" />
+        <input name="data.butler_type1" type="text" value="{{data.data.butler_type1}}" />
         <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-        <input name="data.butler_type2" type="text" value="{{data.butler_type2}}" />
+        <input name="data.butler_type2" type="text" value="{{data.data.butler_type2}}" />
       </div>
       {{/if}}
       {{#if (eq actor.type "master")}}
       <div class="maid_type">
         <label class="maid_type">Master Type: </label>
-        <input name="data.master_type" type="text" value="{{data.master_type}}" />
+        <input name="data.master_type" type="text" value="{{data.data.master_type}}" />
       </div>
       {{/if}}
       <div class="grid grid-2col">
@@ -163,7 +163,7 @@
           <label class="name_label">Name</label>
           <input class="name_input" name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
           <label class="age_label">Age</label>
-          <input class="age_input" name="data.age" type="text" value="{{data.age}}" placeholder="Age" data-dtype="Number"/>
+          <input class="age_input" name="data.age" type="text" value="{{data.data.age}}" placeholder="Age" data-dtype="Number"/>
       </div>
       <img class="actor-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}"/>
       <div class="flex-group-center">
@@ -182,9 +182,9 @@
           <label>Hair</label>
         </div>
         <div class="grid grid-3col flexrow flex-center">
-          <h4 class="charage"><input name="data.clothes" type="text" value="{{data.clothes}}" placeholder="Clothes" data-dtype="String"/></h1>
-          <h4 class="charage"><input name="data.eyes" type="text" value="{{data.eyes}}" placeholder="Eyes" data-dtype="String"/></h1>
-          <h4 class="charage"><input name="data.hair" type="text" value="{{data.hair}}" placeholder="Hair" data-dtype="String"/></h1>
+          <h4 class="charage"><input name="data.clothes" type="text" value="{{data.data.clothes}}" placeholder="Clothes" data-dtype="String"/></h1>
+          <h4 class="charage"><input name="data.eyes" type="text" value="{{data.data.eyes}}" placeholder="Eyes" data-dtype="String"/></h1>
+          <h4 class="charage"><input name="data.hair" type="text" value="{{data.data.hair}}" placeholder="Hair" data-dtype="String"/></h1>
         </div>
       </div>
     </div>

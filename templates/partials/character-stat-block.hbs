@@ -1,7 +1,7 @@
 <section>
   <div class="attribute-block">
     <div class="grid grid-6col">
-      {{#each data.attributes as |attributes key|}}
+      {{#each data.data.attributes as |attributes key|}}
         <div class="stat-block flex-group-center">
           <label for="data.attributes.{{key}}.value" class="rollable" data-roll="d6*@attributes.{{key}}.value" data-label="{{label}}">{{attributes.label}}</label>
           <input type="text" name="data.attributes.{{key}}.value" value="{{attributes.value}}" data-dtype="Number"/>
@@ -23,7 +23,7 @@
           <div class="grid grid-4col flex-row flex-group-left">
             <label class="stress_label">Stress</label>
             <span><label>Spirit</label><label style="font-size:9px;"> Will x10</label></span>
-            <input type="text" name="data.vitals.stress.value" value="{{data.vitals.stress.value}}" data-dtype="Number" />
+            <input type="text" name="data.vitals.stress.value" value="{{data.data.vitals.stress.value}}" data-dtype="Number" />
           </div>
             {{editor content=data.stress_desc target="data.stress_desc" button=true owner=owner editable=editable}}
           </div>
@@ -31,9 +31,9 @@
           <div class="grid grid-4col flex-row flex-group-left">
             <label class="favor_label">Favor</label>
             <span><label>Favor</label><label style="font-size:9px;"> Affection x2</label></span>
-            <input type="text" name="data.vitals.favor.value" value="{{data.vitals.favor.value}}" data-dtype="Number" />
+            <input type="text" name="data.vitals.favor.value" value="{{data.data.vitals.favor.value}}" data-dtype="Number" />
           </div>
-            {{editor content=data.favor_desc target="data.favor_desc" button=true owner=owner editable=editable}}
+            {{editor content=data.data.favor_desc target="data.data.favor_desc" button=true owner=owner editable=editable}}
           </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
     <div class="grid grid-2col">
       <div class="vitals notes-block" style="grid-row: span 2;">
         <p>Notes</p>
-        {{editor content=data.notes target="data.notes" button=true owner=owner editable=editable}}
+        {{editor content=data.data.notes target="data.data.notes" button=true owner=owner editable=editable}}
       </div>
       <div class="vitals weapons-block">
         <p>Weapons</p>
@@ -62,7 +62,7 @@
       </div>
       <div class="vitals appearance-block">
         <p>Appearance</p>
-        {{editor content=data.appearance target="data.appearance" button=true owner=owner editable=editable}}
+        {{editor content=data.data.appearance target="data.data.appearance" button=true owner=owner editable=editable}}
       </div>
 
     </div>

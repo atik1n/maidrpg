@@ -15,7 +15,7 @@ export default class MaidRPGCharacterSheet extends ActorSheet{
   getData() {
     const data = super.getData();
     data.dtypes = ["String", "Number", "Boolean"];
-    for (let attr of Object.values(data.data.attributes)) {
+    for (let attr of Object.values(data.data.data.attributes)) {
      attr.isCheckbox = attr.dtype === "Boolean";
    }
 
@@ -115,7 +115,7 @@ export default class MaidRPGCharacterSheet extends ActorSheet{
     // Delete Inventory Item
     html.find('.item-delete').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
-      this.actor.deleteOwnedItem(li.data("itemId"));
+      this.actor.items.delete(li.data("itemId"));
       li.slideUp(200, () => this.render(false));
     });
 
@@ -173,7 +173,7 @@ export default class MaidRPGCharacterSheet extends ActorSheet{
     if (dataset.roll) {
       let roll = new Roll(dataset.roll, this.actor.data.data);
       let label = dataset.label ? `Rolling ${dataset.label} Check` : '';
-      roll.roll().toMessage({
+      roll.roll({async:false}).toMessage({
         // speaker: ChatMessage.getSpeaker({ actor: this.actor }),
         speaker: ChatMessage.getSpeaker({ actor: this.Actor }),
         flavor: label

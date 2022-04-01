@@ -1,6 +1,6 @@
 # Foundry Virtual Tabletop - MaidRPG Game System
 
-Version 0.0.15.1
+Version 0.0.15.2
 
 This game system for Foundry Virtual Tabletop provides character sheet and game system support for MaidRPG.
 

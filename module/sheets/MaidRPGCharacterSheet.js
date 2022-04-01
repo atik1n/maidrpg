@@ -115,7 +115,7 @@ export default class MaidRPGCharacterSheet extends ActorSheet{
     // Delete Inventory Item
     html.find('.item-delete').click(ev => {
       const li = $(ev.currentTarget).parents(".item");
-      this.actor.items.delete(li.data("itemId"));
+      this.actor.items.get(li.data("itemId")).delete();
       li.slideUp(200, () => this.render(false));
     });
 

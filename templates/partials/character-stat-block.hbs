@@ -25,7 +25,7 @@
             <span><label>Spirit</label><label style="font-size:9px;"> Will x10</label></span>
             <input type="text" name="data.vitals.stress.value" value="{{data.data.vitals.stress.value}}" data-dtype="Number" />
           </div>
-            {{editor content=data.stress_desc target="data.stress_desc" button=true owner=owner editable=editable}}
+            {{editor content=data.data.stress_desc target="data.stress_desc" button=true owner=owner editable=editable}}
           </div>
         <div class="vitals favor-block">
           <div class="grid grid-4col flex-row flex-group-left">
@@ -33,7 +33,7 @@
             <span><label>Favor</label><label style="font-size:9px;"> Affection x2</label></span>
             <input type="text" name="data.vitals.favor.value" value="{{data.data.vitals.favor.value}}" data-dtype="Number" />
           </div>
-            {{editor content=data.data.favor_desc target="data.data.favor_desc" button=true owner=owner editable=editable}}
+            {{editor content=data.data.favor_desc target="data.favor_desc" button=true owner=owner editable=editable}}
           </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
     <div class="grid grid-2col">
       <div class="vitals notes-block" style="grid-row: span 2;">
         <p>Notes</p>
-        {{editor content=data.data.notes target="data.data.notes" button=true owner=owner editable=editable}}
+        {{editor content=data.data.notes target="data.notes" button=true owner=owner editable=editable}}
       </div>
       <div class="vitals weapons-block">
         <p>Weapons</p>
@@ -62,7 +62,7 @@
       </div>
       <div class="vitals appearance-block">
         <p>Appearance</p>
-        {{editor content=data.data.appearance target="data.data.appearance" button=true owner=owner editable=editable}}
+        {{editor content=data.data.appearance target="data.appearance" button=true owner=owner editable=editable}}
       </div>
 
     </div>
